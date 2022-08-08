@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Página Matématicas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<script src="../JS/App.js"></script>
+
+<body>
+    <div class="container-fluid bg-danger">
+        <nav class="navbar navbar-inverse navbar-light bg-warning navbar-toggleable-md">
+            <img class="image-fluid" src="../IMG/Matematicas.png" width="100px" height="100px">
+            <a class="navbar-brand text-info" href="../HTML/Index.html" style="font-size: 40px;">Página de la matemáticas</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="nav-item nav-link active ml-5" href="../HTML/Index.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">Sumar</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input id="sP" type="number" class="form-control">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input id="sS" type="number" class="form-control"> 
+                    <button onclick="sumar();" type="button" class="btn btn-info btn-block mt-3">Sumar</button>
+                    <div id="divS" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Restar</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input id="rP" type="number" class="form-control">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input id="rS" type="number" class="form-control">
+                    <button onclick="restar();" type="button" class="btn btn-info btn-block mt-3">Restar</button>
+                    <div id="divR" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Multiplicar</h1>
+                <form action="" class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input id="mP" type="number" class="form-control">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input id="mS" type="number" class="form-control">
+                    <button onclick="multcar();" type="button" class="btn btn-info btn-block mt-3">Multiplicar</button>
+                    <div id="divM" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">División</h1>
+                <form class="form-group text-light">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input id="dP" type="number" class="form-control">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input id="dS" type="number" class="form-control">
+                    <button onclick="dividir();" type="button" class="btn btn-info btn-block mt-3">Dividir</button>
+                    <div id="divD" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Números Ascendentes</h1>
+                <form class="form-group">
+                    <button onclick="numAsc();" type="button" class="btn btn-info btn-block mt-3">Mostrar números</button>
+                    <div id="nAsc" class="alert alert-success mt-3" role="alert"><p id="pas"></p></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Verificación Calificaciones</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa una calificación:</label>
+                    <input id="cal" type="number" class="form-control">
+                    <button onclick="calver();" type="button" class="btn btn-info btn-block mt-3">Verificar</button>
+                    <div id="vercali" class="alert alert-success mt-3" role="alert"></div>
+                    <audio id="repro" src="../Audio/Reprobada.mp3" style="display: none;"></audio>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> 
+
+    </body>
+</html>
